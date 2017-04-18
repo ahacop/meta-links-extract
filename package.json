@@ -1,0 +1,50 @@
+{
+  "name": "meta-links-extract",
+  "version": "0.0.0-development",
+  "description": "Extract links tags from HTML metadata",
+  "main": "src/index.js",
+  "scripts": {
+    "format": "prettier-eslint --write \"lib/**/*.js\" \"tests/**/*.js\"",
+    "lint": "./node_modules/.bin/eslint \"lib/**/*.js\" \"tests/**/*.js\"",
+    "test": "npm run test:dev",
+    "test:dev": "tape \"tests/**/*.js\" | faucet",
+    "test:ci": "npm run lint && npm run test:dev",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "engines": {
+    "node": ">=6.10"
+  },
+  "keywords": [
+    "parser",
+    "extract",
+    "HTML",
+    "metadata",
+    "links"
+  ],
+  "author": {
+    "name": "Ara Hacopian",
+    "email": "arahacopian@gmail.com",
+    "url": "https://github.com/ahacop/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ahacop/meta-links-extract/issues"
+  },
+  "homepage": {
+    "url": "https://github.com/ahacop/meta-links-extract"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahacop/meta-links-extract.git"
+  },
+  "dependencies": {
+    "htmlparser2": "^3.9.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "faucet": "^0.0.1",
+    "prettier-eslint-cli": "^3.3.0",
+    "semantic-release": "^6.3.2",
+    "tape": "^4.6.3"
+  }
+}
