@@ -1,6 +1,6 @@
 const fs = require("fs")
 const test = require("tape")
-const extractLinks = require("../lib/")
+const extractLinks = require("../")
 
 test("it returns the expected array of links for newyorker.com", t => {
   const newyorker = fs.readFileSync("./tests/fixtures/newyorker.html", "utf8")

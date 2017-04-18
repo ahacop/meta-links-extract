@@ -2,7 +2,7 @@
   "name": "meta-links-extract",
   "version": "0.0.0-development",
   "description": "Extract links tags from HTML metadata",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "format": "prettier-eslint --write \"lib/**/*.js\" \"tests/**/*.js\"",
     "lint": "./node_modules/.bin/eslint \"lib/**/*.js\" \"tests/**/*.js\"",
