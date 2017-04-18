@@ -10,7 +10,9 @@
     "test:dev": "npm run test:run && npm run test:report",
     "test:run": "istanbul cover -print none tests | faucet",
     "test:report": "istanbul report text-summary",
-    "test:ci": "npm run lint && npm run test:dev",
+    "test:ci": "npm run lint && npm run test:dev && npm run test:coverage:check",
+    "test:coverage:report": "cat ./coverage/lcov.info | codecov",
+    "test:coverage:check": "istanbul check-coverage",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "engines": {
@@ -43,6 +45,7 @@
     "htmlparser2": "^3.9.2"
   },
   "devDependencies": {
+    "codecov.io": "^0.1.6",
     "eslint": "^3.19.0",
     "faucet": "^0.0.1",
     "istanbul": "^0.4.5",
