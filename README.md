@@ -1,7 +1,7 @@
 # meta-links-extract
 Reads in HTML, returns an array of objects representing the `<link>` elements
 
-[![Travis](https://img.shields.io/travis/ahacop/meta-links-extract)](https://travis-ci.org/ahacop/meta-links-extract)
+[![Travis](https://api.travis-ci.org/ahacop/meta-links-extract.svg?branch=master)](https://travis-ci.org/ahacop/meta-links-extract)
 [![Codecov](https://img.shields.io/codecov/c/github/ahacop/meta-links-extract.svg)](https://codecov.io/github/ahacop/meta-links-extract)
 [![npm](https://img.shields.io/npm/v/meta-links-extract.svg)](https://www.npmjs.com/package/meta-links-extract)
 [![npm](https://img.shields.io/npm/l/meta-links-extract.svg)](https://github.com/ahacop/meta-links-extract/blob/master/LICENSE)
