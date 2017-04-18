@@ -7,7 +7,9 @@
     "format": "prettier-eslint --write \"lib/**/*.js\" \"tests/**/*.js\"",
     "lint": "./node_modules/.bin/eslint \"lib/**/*.js\" \"tests/**/*.js\"",
     "test": "npm run test:dev",
-    "test:dev": "tape \"tests/**/*.js\" | faucet",
+    "test:dev": "npm run test:run && npm run test:report",
+    "test:run": "istanbul cover -print none tests | faucet",
+    "test:report": "istanbul report text-summary",
     "test:ci": "npm run lint && npm run test:dev",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
@@ -43,6 +45,7 @@
   "devDependencies": {
     "eslint": "^3.19.0",
     "faucet": "^0.0.1",
+    "istanbul": "^0.4.5",
     "prettier-eslint-cli": "^3.3.0",
     "semantic-release": "^6.3.2",
     "tape": "^4.6.3"
